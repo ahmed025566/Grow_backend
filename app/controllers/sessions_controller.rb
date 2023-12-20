@@ -21,8 +21,8 @@ class SessionsController < ApplicationController
   end
 
   def log_out
-    resset_session
-    redner json: { status: 200, logged_out: true}
+    reset_session
+    render json: { status: 200, logged_out: true}
   end
 
   private
