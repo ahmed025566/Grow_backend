@@ -84,6 +84,4 @@ test:
 #
 production:
   <<: *default
-  database: grow_production
-  username: grow
-  password: <%= ENV["GROW_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
