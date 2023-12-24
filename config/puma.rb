@@ -19,6 +19,7 @@ if ENV["RAILS_ENV"] == "production"
 end
 
 
+workers ENV.fetch("WEB_CONCURRENCY") { 4 }
 
 
 # Specifies the `worker_timeout` threshold that Puma will use to wait before
